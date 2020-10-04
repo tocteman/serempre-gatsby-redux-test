@@ -19,8 +19,8 @@ const UbicacionesPage=()=> {
     <Layout>
       <div className="h-64 w-100">
       <GoogleMapReact
-    bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_KEY}}
-    // bootstrapURLKeys={{key: "AIzaSyDVClmqTUwNiMZu028CfU-croeNXR0VAbI"}}
+    // bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_KEY}}
+    bootstrapURLKeys={{key: "AIzaSyDVClmqTUwNiMZu028CfU-croeNXR0VAbI"}}
     defaultCenter={defaultProps.center}
     defaultZoom={defaultProps.zoom}
   >
