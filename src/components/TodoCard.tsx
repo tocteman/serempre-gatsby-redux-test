@@ -23,7 +23,7 @@ const TodoCard = ({todo, updateTodo, deleteTodo}) => {
         alert("Sorry, this app only works with geolocation enabled on your browser.")
         const changedTodoWithoutPositon: Todo = {
           ...todo,
-          completed: !todo.completed
+          completed: !todo?.completed
         }
         updateTodo(changedTodoWithoutPositon)
       }
