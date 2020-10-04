@@ -1,7 +1,7 @@
 import React from "react";
 import {format} from "date-fns"
 
-let nav = typeof navigator === undefined ? navigator?.geolocation : null
+let nav = typeof navigator !== undefined ? navigator?.geolocation : null
 
 const TodoCard = ({todo, updateTodo, deleteTodo}) => {
 

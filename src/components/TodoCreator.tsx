@@ -4,7 +4,7 @@ import  "../state/types"
 import { v4 as uuidv4 } from 'uuid';
 
 
-let nav = typeof navigator === undefined ? navigator?.geolocation : null
+let nav = typeof navigator !== undefined ? navigator?.geolocation : null
 
 
 const TodoCreator = ({createTodo}) => {
