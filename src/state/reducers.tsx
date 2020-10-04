@@ -50,5 +50,3 @@ const persistedReducer = persistReducer(persistConfig, todoReducer)
 const reduxStore =  createStore(persistedReducer, initialState) 
 const persistor = persistStore(reduxStore)
 export { reduxStore, persistor }
-
-// const reduxStore = ()=> createStore(todoReducer, initialState)
