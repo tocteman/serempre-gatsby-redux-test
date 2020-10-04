@@ -14,7 +14,7 @@ const InteractiveMap = ({todos}) => {
   }
   return (
     <GoogleMapReact
-    bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_KEY}}
+    bootstrapURLKeys={{ key: process.env.GATSBY_GOOGLE_MAPS_KEY}}
     defaultCenter={mapProps.center}
     defaultZoom={mapProps.zoom}
   >

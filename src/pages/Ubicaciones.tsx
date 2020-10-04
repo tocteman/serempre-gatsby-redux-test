@@ -2,16 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 import MapContainer from "../containers/MapContainer";
 
-
-
-const defaultProps = {
-  center: {
-    lat: -4.2700287999999995,
-    lng: -79.2338259
-  },
-  zoom: 11
-};
-
 const UbicacionesPage=()=> {
   return (
     <Layout>
