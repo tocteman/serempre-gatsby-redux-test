@@ -1,34 +1,16 @@
 import React from "react"
 import { connect } from "react-redux"
 import Layout from "../components/Layout"
-// import TodosPresenter from "../components/TodosPresenter"
 import TodosContainer from "../containers/TodosContainer"
-
-
-
-
-
-
-// const Counter = ({ count, increment }) => (
-//   <div>
-//     <p>Count: {count}</p>
-//     <button onClick={increment}>Increment</button>
-//   </div>
-// )
-
-// const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter)
-
-
 
 const Home = () => {
 
   return (
     <Layout>
-    <div className="min-h-screen bg-red-500 text-5xl font-bold text-center">
-
+      <div className="max-w-md text-4xl text-center">
+        <h2 className="mb-8">¿Dónde dejé mi <span className="font-bold">pendiente</span>?</h2>
+      </div>
       <TodosContainer />
-      a ver
-    </div>
     </Layout>
   )
 }

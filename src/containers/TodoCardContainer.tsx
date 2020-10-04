@@ -1,6 +1,5 @@
 import {connect} from "react-redux"
 import TodoCard from "../components/TodoCard"
-import {UPDATE_TODO, DELETE_TODO} from "../state/constants"
 import {updateTodo, deleteTodo} from "../state/actions"
 
 const mapStateToProps = ( state, ownProps ) => {

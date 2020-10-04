@@ -9,13 +9,12 @@ import {reduxStore, persistor} from "./src/state/reducers"
 
 
 export default ({ element }) => {
-  const store = reduxStore()
-  console.log(store)
+  const store = reduxStore
   return (
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
+      <PersistGate loading={null} persistor={persistor}>
       {element}
-      {/* </PersistGate> */}
+      </PersistGate>
     </Provider>
 
   )

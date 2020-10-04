@@ -5,6 +5,9 @@ import storage from 'redux-persist/lib/storage'
 import TodosContainer from "../containers/TodosContainer"
 
 
+export const initialState = {
+  todos: []
+}
 
 const todoReducer = (state, action) => {
   const {type, payload} = action
@@ -44,16 +47,8 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, todoReducer)
 
+const reduxStore =  createStore(persistedReducer, initialState) 
+const persistor = persistStore(reduxStore)
+export { reduxStore, persistor }
 
-export const initialState = {
-  todos: []
-}
-
-
-// const reduxStore =  createStore(persistedReducer, initialState, 
-// const persistor = persistStore(reduxStore)
-// export { reduxStore, persistor }
-
-const reduxStore = ()=> createStore(todoReducer, initialState)
-
-export {reduxStore}
+// const reduxStore = ()=> createStore(todoReducer, initialState)

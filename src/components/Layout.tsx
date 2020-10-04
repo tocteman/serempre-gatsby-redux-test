@@ -3,7 +3,7 @@ import BottomTabs from "./BottomTabs"
 
 const Layout=({children})=> {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-blue-400">
       {children}
       <BottomTabs/>
     </div>

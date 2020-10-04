@@ -1,10 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
-import GoogleMapReact from "google-map-react"
+import MapContainer from "../containers/MapContainer";
 
-// interface AnyReactComponentProps = 
 
-// const AnyReactComponent = ({ text:string }) => <div>{text}</div>;
 
 const defaultProps = {
   center: {
@@ -17,19 +15,8 @@ const defaultProps = {
 const UbicacionesPage=()=> {
   return (
     <Layout>
-      <div className="h-64 w-100">
-      <GoogleMapReact
-    // bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_KEY}}
-    bootstrapURLKeys={{key: "AIzaSyDVClmqTUwNiMZu028CfU-croeNXR0VAbI"}}
-    defaultCenter={defaultProps.center}
-    defaultZoom={defaultProps.zoom}
-  >
-      {/* <AnyReactComponent
-        lat={59.955413}
-        lng={30.337844}
-        text="My Marker"
-      /> */}
-    </GoogleMapReact>
+        <div className="h-3/4-screen w-4/5 border-2 border-black shadow">
+        <MapContainer/>
       </div>
     </Layout>
   )
